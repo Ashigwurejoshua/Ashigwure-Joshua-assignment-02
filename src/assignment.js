@@ -13,7 +13,7 @@ const assignment = {};
  * @param {Array} arrayOfNumbers the array of numbers to sum
  * @returns number the sum of the numbers
  */
-const arrayOfNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const arrayOfNumbers =  [68, -68, 27, 94, 72, -25, -51, 32, 10, 64, -94, 4, 34, -86, 90, 81, 20, -56, -91, -50];
 function sumOfNumbers(arrayOfNumbers) {
    let sumOfNumbers = 0;
     for (let index = 0; index < arrayOfNumbers.length; index++) {
@@ -35,19 +35,21 @@ assignment.sumOfNumbers = sumOfNumbers;
  * @param {Array} arrayOfNumbers the array containing even or non-even numbers
  * @returns number the count of even numbers
  */
-function countEvenNumbers(arrayOfNumbers) {
-   let sumOfEvenNumbers = 0;
-    for (let index = 0; index < arrayOfNumbers.length; index++) {
+const array_of_numbers =  [17, 0, 67, 41, 49, 21, 1, 86, 76, 2, 54, 14, 93, 84, 14, 77, 35, 7, 29, 64];
+
+function countEvenNumbers(array_of_numbers) {
+   let count = 0;
+    for (let index = 0; index < array_of_numbers.length; index++) {
         //code to select only even numbers from the array
-        if (arrayOfNumbers[index] % 2 === 0) {
-          //summation of all even numbers in the given array
-            sumOfEvenNumbers += arrayOfNumbers[index]
+        if (array_of_numbers[index] % 2 === 0) {
+          //summation of count of even numbers in array
+        count++
         }
     }
-    return sumOfEvenNumbers;
-    return arrayOfNumbers.length;
+    return count;
+    return array_of_numbers.length;
 }
-console.log(countEvenNumbers(arrayOfNumbers));
+console.log(countEvenNumbers(array_of_numbers));
 assignment.countEvenNumbers = countEvenNumbers;
 
 /**
